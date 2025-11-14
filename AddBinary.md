@@ -23,6 +23,7 @@ Convert the sum back into binary.
 Remove the "0b" prefix using [2:].
 This approach is clean, readable, and uses Python’s strengths.
 Code
+
 class Solution(object):
     def addBinary(self, a, b):
         a_int = int(a, 2)  
@@ -51,11 +52,3 @@ iterate from right to left
 maintain a carry
 
 build output string bit by bit
-
-class Solution(object):
-    def addBinary(self, a, b):
-        a_int = int(a, 2)  
-        b_int = int(b, 2)  
-        sum_int = a_int + b_int  
-        return bin(sum_int)[2:]  
-            
